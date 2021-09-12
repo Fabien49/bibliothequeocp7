@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/backendRestApiBiblio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batchBiblio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/frontendWebBiblio/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frontendWebBiblio/src/main/resources" charset="UTF-8" />
   </component>
 </project>

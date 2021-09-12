@@ -1,6 +1,7 @@
 package com.fabienit.biblioapi.controller;
 
 
+import com.fabienit.biblioapi.exceptions.LivreIntrouvableException;
 import com.fabienit.biblioapi.model.Reservation;
 import com.fabienit.biblioapi.repository.ReservationRepository;
 import com.fabienit.biblioapi.service.ReservationService;
@@ -29,6 +30,17 @@ public class ReservationController {
         List<Reservation> reservations = reservationRepository.findAll();
 
         return reservations;
+    }
+
+    //Récupérer une réservation par son Id
+    @GetMapping(value = "/{id}")
+    public Reservation afficherUneReservation(@PathVariable int id) {
+
+        Reservation reservation = reservationRepository.findById(id);
+
+        if(reservation==null) throw new LivreIntrouvableException("La réservation avec cet id est INTROUVABLE. Essayez avec un autre ID.");
+
+        return reservation;
     }
 
     //Ajouter une réservation

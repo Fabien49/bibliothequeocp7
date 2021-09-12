@@ -1,5 +1,6 @@
 package com.fabienit.biblioapi.controller;
 
+import com.fabienit.biblioapi.exceptions.LivreIntrouvableException;
 import com.fabienit.biblioapi.model.Bibliotheque;
 import com.fabienit.biblioapi.repository.BibliothequeRepository;
 import com.fabienit.biblioapi.service.BibliothequeService;
@@ -30,6 +31,17 @@ public class BibliothequeController {
         return bibliotheques;
     }
 
+    //Récupérer une bibliothèque par son Id
+    @GetMapping(value = "/{id}")
+    public Bibliotheque afficherUneBilbiotheque(@PathVariable int id) {
+
+        Bibliotheque bibliotheque = bibliothequeRepository.findById(id);
+
+        if(bibliotheque==null) throw new LivreIntrouvableException("La bibliothèque avec cet id est INTROUVABLE. Essayez avec un autre ID.");
+
+        return bibliotheque;
+    }
+
     //Ajouter une blibliothèque
     @PostMapping
     public void ajouterBibli (@RequestBody Bibliotheque bibliotheque){bibliothequeService.ajouterBibli(bibliotheque);}
@@ -43,7 +55,7 @@ public class BibliothequeController {
             Bibliotheque _bibliotheque = modifierBibliotheque.get();
             _bibliotheque.setNom(bibliotheque.getNom());
             _bibliotheque.setVoie(bibliotheque.getVoie());
-            _bibliotheque.setCodePosral(bibliotheque.getCodePosral());
+            _bibliotheque.setCodePostal(bibliotheque.getCodePostal());
             _bibliotheque.setCommune(bibliotheque.getCommune());
             return new ResponseEntity<Bibliotheque>(bibliothequeRepository.save(_bibliotheque), HttpStatus.OK);
         } else {

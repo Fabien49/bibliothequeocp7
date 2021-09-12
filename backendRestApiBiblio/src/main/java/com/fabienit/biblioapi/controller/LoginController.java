@@ -1,31 +1,24 @@
-package com.fabienIT.escaladefriendsp6ocr.controller;
+package com.fabienit.biblioapi.controller;
 
-import javax.validation.Valid;
-import com.fabienIT.escaladefriendsp6ocr.model.User;
+import com.fabienit.biblioapi.service.UsagerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.fabienIT.escaladefriendsp6ocr.service.UserService;
-
-@Controller
+@RestController
+@RequestMapping(value = "api/login")
 public class LoginController {
 	
 	@Autowired
-	private UserService userService;
+	private UsagerService usagerService;
 
-	@RequestMapping(value={"/login"}, method = RequestMethod.GET)
-	public ModelAndView login(Model model){
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("login");
-		return modelAndView;
+	@GetMapping
+	public String login(){
+		return "login";
 	}
 
-	@RequestMapping(value="/inscription", method = RequestMethod.GET)
+	/*@RequestMapping(value="/inscription", method = RequestMethod.GET)
 	public ModelAndView registration(){
 		ModelAndView modelAndView = new ModelAndView();
 		User user = new User();
@@ -61,5 +54,5 @@ public class LoginController {
 			modelAndView.setViewName("/login");
 		}
 		return modelAndView;
-	}
+	}*/
 }

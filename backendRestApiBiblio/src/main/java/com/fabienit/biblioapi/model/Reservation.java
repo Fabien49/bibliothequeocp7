@@ -23,15 +23,20 @@ public class Reservation {
     @JoinColumn(name = "usager_id", nullable = false)
     private Usager usager;
 
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "livre_id", nullable = false)
+    private Livre livre;
+
     public Reservation() {
     }
 
-    public Reservation(int id, LocalDateTime dateReservation, LocalDateTime dateRetour, boolean prolongation, Usager usager) {
+    public Reservation(int id, LocalDateTime dateReservation, LocalDateTime dateRetour, boolean prolongation, Usager usager, Livre livre) {
         this.id = id;
         this.dateReservation = dateReservation;
         this.dateRetour = dateRetour;
         this.prolongation = prolongation;
         this.usager = usager;
+        this.livre = livre;
     }
 
     public int getId() {
@@ -74,6 +79,14 @@ public class Reservation {
         this.usager = usager;
     }
 
+    public Livre getLivre() {
+        return livre;
+    }
+
+    public void setLivre(Livre livre) {
+        this.livre = livre;
+    }
+
     @Override
     public String toString() {
         return "Reservation{" +
@@ -82,6 +95,7 @@ public class Reservation {
                 ", dateRetour=" + dateRetour +
                 ", prolongation=" + prolongation +
                 ", usager=" + usager +
+                ", livre=" + livre +
                 '}';
     }
 }

@@ -1,3 +1,4 @@
+/*
 package com.fabienit.biblioapi.model;
 
 import javax.persistence.*;
@@ -25,3 +26,4 @@ public class Exemplaire {
     private Reservation reservation;
 
 }
+*/

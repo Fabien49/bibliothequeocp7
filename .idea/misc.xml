@@ -4,8 +4,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/batchBiblio/pom.xml" />
-        <option value="$PROJECT_DIR$/frontendWebBiblio/pom.xml" />
         <option value="$PROJECT_DIR$/backendRestApiBiblio/pom.xml" />
+        <option value="$PROJECT_DIR$/../frontendWebBiblio/frontendWebBiblio/pom.xml" />
+        <option value="$PROJECT_DIR$/frontendWebBiblio/pom.xml" />
       </list>
     </option>
   </component>

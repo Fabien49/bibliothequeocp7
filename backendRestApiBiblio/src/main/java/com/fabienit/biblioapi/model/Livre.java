@@ -17,15 +17,17 @@ public class Livre {
     String categorie;
     int quantite;
 
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "bibliotheque_id", nullable = false)
+    private Bibliotheque bibliotheque;
+
     @OneToMany(mappedBy = "livre", fetch = FetchType.EAGER, cascade =  CascadeType.ALL)
-    private Set<Exemplaire> exemplaire;
-
-
+    private Set<Reservation> reservation;
 
     public Livre() {
     }
 
-    public Livre(int id, String titre, String auteur, String description, int isbn, String categorie, int quantite) {
+    public Livre(int id, String titre, String auteur, String description, int isbn, String categorie, int quantite, Bibliotheque bibliotheque) {
         this.id = id;
         this.titre = titre;
         this.auteur = auteur;
@@ -33,6 +35,7 @@ public class Livre {
         this.isbn = isbn;
         this.categorie = categorie;
         this.quantite = quantite;
+        this.bibliotheque = bibliotheque;
     }
 
     public int getId() {
@@ -91,6 +94,14 @@ public class Livre {
         this.quantite = quantite;
     }
 
+    public Bibliotheque getBibliotheque() {
+        return bibliotheque;
+    }
+
+    public void setBibliotheque(Bibliotheque bibliotheque) {
+        this.bibliotheque = bibliotheque;
+    }
+
     @Override
     public String toString() {
         return "Livre{" +
@@ -101,6 +112,12 @@ public class Livre {
                 ", isbn=" + isbn +
                 ", categorie='" + categorie + '\'' +
                 ", quantite=" + quantite +
+                ", bibliotheque=" + bibliotheque +
                 '}';
     }
 }
+
+
+
+
+

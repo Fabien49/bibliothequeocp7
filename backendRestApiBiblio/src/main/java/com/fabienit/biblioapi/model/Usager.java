@@ -44,12 +44,16 @@ public class Usager {
 	@OneToMany(mappedBy = "usager", fetch = FetchType.EAGER, cascade =  CascadeType.ALL)
 	private Set<Reservation> reservation;
 
+/*	@ManyToOne(fetch = FetchType.EAGER, optional = false)
+	@JoinColumn(name = "bibliotheque_id", nullable = false)
+	private Bibliotheque bibliotheque;*/
+
 
 	public Usager() {
 	}
 
 
-	public Usager(int id, String email, String password,String name, String lastName, String voie, String codePostal, String commune, boolean active, Set<Role> roles) {
+	public Usager(int id, String email, String password, String name, String lastName, String voie, String codePostal, String commune, boolean active, Set<Role> roles,  Bibliotheque bibliotheque) {
 		this.id = id;
 		this.email = email;
 		this.password = password;
@@ -63,11 +67,19 @@ public class Usager {
 	}
 
 	public int getId() {
-		return this.id;
+		return id;
 	}
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
@@ -94,30 +106,6 @@ public class Usager {
 		this.lastName = lastName;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean active) {
-		this.active = active;
-	}
-
-	public Set<Role> getRoles() {
-		return roles;
-	}
-
-	public void setRoles(Set<Role> roles) {
-		this.roles = roles;
-	}
-
 	public String getVoie() {
 		return voie;
 	}
@@ -142,6 +130,24 @@ public class Usager {
 		this.commune = commune;
 	}
 
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public Set<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
+
+
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -152,7 +158,7 @@ public class Usager {
 
 	@Override
 	public String toString() {
-		return "User{" +
+		return "Usager{" +
 				"id=" + id +
 				", email='" + email + '\'' +
 				", password='" + password + '\'' +

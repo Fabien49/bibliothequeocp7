@@ -1,4 +1,3 @@
-
 package com.fabienit.biblioapi.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;

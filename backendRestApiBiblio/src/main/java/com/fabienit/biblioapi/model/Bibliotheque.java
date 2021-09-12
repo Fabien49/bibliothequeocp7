@@ -13,20 +13,25 @@ public class Bibliotheque {
     int id;
     String nom;
     String voie;
-    String codePosral;
+    String codePostal;
     String commune;
 
     @OneToMany(mappedBy = "bibliotheque", fetch = FetchType.EAGER, cascade =  CascadeType.ALL)
-    private Set<Exemplaire> exemplaire;
+    private Set<Livre> livre;
+
+/*    @OneToMany(mappedBy = "bibliotheque", fetch = FetchType.EAGER, cascade =  CascadeType.ALL)
+    private Set<Usager> usager;*/
+
+
 
     public Bibliotheque() {
     }
 
-    public Bibliotheque(int id, String nom, String voie, String codePosral, String commune) {
+    public Bibliotheque(int id, String nom, String voie, String codePostal, String commune) {
         this.id = id;
         this.nom = nom;
         this.voie = voie;
-        this.codePosral = codePosral;
+        this.codePostal = codePostal;
         this.commune = commune;
     }
 
@@ -54,12 +59,12 @@ public class Bibliotheque {
         this.voie = voie;
     }
 
-    public String getCodePosral() {
-        return codePosral;
+    public String getCodePostal() {
+        return codePostal;
     }
 
-    public void setCodePosral(String codePosral) {
-        this.codePosral = codePosral;
+    public void setCodePostal(String codePostal) {
+        this.codePostal = codePostal;
     }
 
     public String getCommune() {
@@ -76,7 +81,7 @@ public class Bibliotheque {
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", voie='" + voie + '\'' +
-                ", codePosral='" + codePosral + '\'' +
+                ", codePostal='" + codePostal + '\'' +
                 ", commune='" + commune + '\'' +
                 '}';
     }
