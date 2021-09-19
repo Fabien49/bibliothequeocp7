@@ -5,6 +5,63 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ /*Side bar*/
+
+ .container-fluid {
+   max-width: 960px;
+ }
+
+ [data-toggle="collapse"] {
+   cursor: pointer;
+ }
+
+
+ .sliding-sidebar {
+     position: absolute;
+     z-index: 1;
+     background: #fff;
+     min-height: 100%;
+     border-right: 1px solid #ccc;
+
+     &.collapse,
+     &.collapsing {
+       display: block !important;
+       transform: translate3D(-100%, 0, 0);
+       transition: all 200ms;
+     }
+
+     &.collapse.in {
+       transform: translate3D(0, 0, 0);
+       box-shadow:
+         1px 0 0 rgba(0,0,0,0.05),
+         2px 0 0 rgba(0,0,0,0.05),
+         3px 0 0 rgba(0,0,0,0.05);
+     }
+   }
+ }
+
+ .parent-expanded {
+
+ }
+ .parent-collapsed {
+   display: none;
+ }
+
+ .collapsed {
+   .parent-expanded {
+     display: none;
+   }
+
+   .parent-collapsed {
+     display: inline-block;
+   }
+ }
+
+ /*en sidebar*/
+
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

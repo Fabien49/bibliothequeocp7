@@ -15,7 +15,7 @@
     <bytecodeTargetLevel>
       <module name="biblioapi" target="1.8" />
       <module name="bibliobatch" target="1.8" />
-      <module name="biblioweb" target="8" />
+      <module name="biblioweb" target="1.6" />
       <module name="frontendWebBiblio" target="1.5" />
     </bytecodeTargetLevel>
   </component>
@@ -23,7 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="biblioapi" options="-parameters" />
       <module name="bibliobatch" options="-parameters" />
-      <module name="biblioweb" options="-parameters" />
+      <module name="biblioweb" options="" />
       <module name="frontendWebBiblio" options="-parameters" />
     </option>
   </component>
