@@ -1,0 +1,212 @@
+2022-01-24 19:31:16,853 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/C:/Users/FaB/Git/Projet%207/bibliothequeocp7/backendRestApiBiblio/target/classes/data.sql]: insert into book ( author_first_name, author_last_name, pictureurl, publication_date, synopsis, title ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'Cependant les Révérendes Mères du Bene Gesserit poursuivent leur programme millénaire de sélection génétique ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "INSERT INTO BOOK ( AUTHOR_FIRST_NAME, AUTHOR_LAST_NAME, PICTUREURL, PUBLICATION_DATE, SYNOPSIS, TITLE ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'CEPENDANT[*] LES RÉVÉRENDES MÈRES DU BENE GESSERIT POURSUIVENT LEUR PROGRAMME MILLÉNAIRE DE SÉLECTION GÉNÉTIQUE "; attendu "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO BOOK ( AUTHOR_FIRST_NAME, AUTHOR_LAST_NAME, PICTUREURL, PUBLICATION_DATE, SYNOPSIS, TITLE ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'CEPENDANT[*] LES RÉVÉRENDES MÈRES DU BENE GESSERIT POURSUIVENT LEUR PROGRAMME MILLÉNAIRE DE SÉLECTION GÉNÉTIQUE "; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into book ( author_first_name, author_last_name, pictureurl, publication_date, synopsis, title ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'Cependant les Révérendes Mères du Bene Gesserit poursuivent leur programme millénaire de sélection génétique  [42001-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fabienit.biblioapi.BiblioApiApplication.main(BiblioApiApplication.java:10)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/C:/Users/FaB/Git/Projet%207/bibliothequeocp7/backendRestApiBiblio/target/classes/data.sql]: insert into book ( author_first_name, author_last_name, pictureurl, publication_date, synopsis, title ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'Cependant les Révérendes Mères du Bene Gesserit poursuivent leur programme millénaire de sélection génétique ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "INSERT INTO BOOK ( AUTHOR_FIRST_NAME, AUTHOR_LAST_NAME, PICTUREURL, PUBLICATION_DATE, SYNOPSIS, TITLE ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'CEPENDANT[*] LES RÉVÉRENDES MÈRES DU BENE GESSERIT POURSUIVENT LEUR PROGRAMME MILLÉNAIRE DE SÉLECTION GÉNÉTIQUE "; attendu "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO BOOK ( AUTHOR_FIRST_NAME, AUTHOR_LAST_NAME, PICTUREURL, PUBLICATION_DATE, SYNOPSIS, TITLE ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'CEPENDANT[*] LES RÉVÉRENDES MÈRES DU BENE GESSERIT POURSUIVENT LEUR PROGRAMME MILLÉNAIRE DE SÉLECTION GÉNÉTIQUE "; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into book ( author_first_name, author_last_name, pictureurl, publication_date, synopsis, title ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'Cependant les Révérendes Mères du Bene Gesserit poursuivent leur programme millénaire de sélection génétique  [42001-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:626)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:99)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:90)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 15 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "INSERT INTO BOOK ( AUTHOR_FIRST_NAME, AUTHOR_LAST_NAME, PICTUREURL, PUBLICATION_DATE, SYNOPSIS, TITLE ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'CEPENDANT[*] LES RÉVÉRENDES MÈRES DU BENE GESSERIT POURSUIVENT LEUR PROGRAMME MILLÉNAIRE DE SÉLECTION GÉNÉTIQUE "; attendu "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO BOOK ( AUTHOR_FIRST_NAME, AUTHOR_LAST_NAME, PICTUREURL, PUBLICATION_DATE, SYNOPSIS, TITLE ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'CEPENDANT[*] LES RÉVÉRENDES MÈRES DU BENE GESSERIT POURSUIVENT LEUR PROGRAMME MILLÉNAIRE DE SÉLECTION GÉNÉTIQUE "; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into book ( author_first_name, author_last_name, pictureurl, publication_date, synopsis, title ) VALUES ( 'Franck', 'Herbert', '/covers/dune_cover.jpg', '2005-06-09', 'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
+'Cependant les Révérendes Mères du Bene Gesserit poursuivent leur programme millénaire de sélection génétique  [42001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:243)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:1053)
+	at org.h2.command.Parser.read(Parser.java:4995)
+	at org.h2.command.Parser.readIfMore(Parser.java:1462)
+	at org.h2.command.Parser.parseValuesForCommand(Parser.java:1878)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1817)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:819)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:605)
+	... 31 common frames omitted
+2022-01-24 21:58:26,094 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of URL [file:/C:/Users/FaB/Git/Projet%207/bibliothequeocp7/backendRestApiBiblio/target/classes/data.sql]: INSERT INTO available_copie (book_id, library_id, owned_quantity, available_quantity, book_can_be_reserved, nearest_return_date, reservation_count) VALUES (1, 1, 2, 0, true, '2020-02-01', 2), (1, 2, 2, 2, true, null, 0), (1, 3, 2, 2, true, null, 0), (2, 1, 2, 1, true, '2020-02-14', 0), (2, 2, 2, 2, true, null, 0), (2, 3, 2, 2, true, null, 0), (3, 1, 2, 0, true, '2020-05-14', 0), (3, 2, 2, 2, true, null, 0), (3, 3, 2, 2, true, null, 0); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Colonne "BOOK_CAN_BE_RESERVED" non trouvée
+Column "BOOK_CAN_BE_RESERVED" not found; SQL statement:
+INSERT INTO available_copie (book_id, library_id, owned_quantity, available_quantity, book_can_be_reserved, nearest_return_date, reservation_count) VALUES (1, 1, 2, 0, true, '2020-02-01', 2), (1, 2, 2, 2, true, null, 0), (1, 3, 2, 2, true, null, 0), (2, 1, 2, 1, true, '2020-02-14', 0), (2, 2, 2, 2, true, null, 0), (2, 3, 2, 2, true, null, 0), (3, 1, 2, 0, true, '2020-05-14', 0), (3, 2, 2, 2, true, null, 0), (3, 3, 2, 2, true, null, 0) [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fabienit.biblioapi.BiblioApiApplication.main(BiblioApiApplication.java:10)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of URL [file:/C:/Users/FaB/Git/Projet%207/bibliothequeocp7/backendRestApiBiblio/target/classes/data.sql]: INSERT INTO available_copie (book_id, library_id, owned_quantity, available_quantity, book_can_be_reserved, nearest_return_date, reservation_count) VALUES (1, 1, 2, 0, true, '2020-02-01', 2), (1, 2, 2, 2, true, null, 0), (1, 3, 2, 2, true, null, 0), (2, 1, 2, 1, true, '2020-02-14', 0), (2, 2, 2, 2, true, null, 0), (2, 3, 2, 2, true, null, 0), (3, 1, 2, 0, true, '2020-05-14', 0), (3, 2, 2, 2, true, null, 0), (3, 3, 2, 2, true, null, 0); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Colonne "BOOK_CAN_BE_RESERVED" non trouvée
+Column "BOOK_CAN_BE_RESERVED" not found; SQL statement:
+INSERT INTO available_copie (book_id, library_id, owned_quantity, available_quantity, book_can_be_reserved, nearest_return_date, reservation_count) VALUES (1, 1, 2, 0, true, '2020-02-01', 2), (1, 2, 2, 2, true, null, 0), (1, 3, 2, 2, true, null, 0), (2, 1, 2, 1, true, '2020-02-14', 0), (2, 2, 2, 2, true, null, 0), (2, 3, 2, 2, true, null, 0), (3, 1, 2, 0, true, '2020-05-14', 0), (3, 2, 2, 2, true, null, 0), (3, 3, 2, 2, true, null, 0) [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:626)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:99)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:90)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 15 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Colonne "BOOK_CAN_BE_RESERVED" non trouvée
+Column "BOOK_CAN_BE_RESERVED" not found; SQL statement:
+INSERT INTO available_copie (book_id, library_id, owned_quantity, available_quantity, book_can_be_reserved, nearest_return_date, reservation_count) VALUES (1, 1, 2, 0, true, '2020-02-01', 2), (1, 2, 2, 2, true, null, 0), (1, 3, 2, 2, true, null, 0), (2, 1, 2, 1, true, '2020-02-14', 0), (2, 2, 2, 2, true, null, 0), (2, 3, 2, 2, true, null, 0), (3, 1, 2, 0, true, '2020-05-14', 0), (3, 2, 2, 2, true, null, 0), (3, 3, 2, 2, true, null, 0) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:605)
+	... 31 common frames omitted
+2022-01-24 22:06:59,644 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #6 of URL [file:/C:/Users/FaB/Git/Projet%207/bibliothequeocp7/backendRestApiBiblio/target/classes/data.sql]: insert into reservation (avalaibility_date, notification_is_sent, book_id, library_id, registered_user_id, position) VALUES (null, false, 1, 1, 3, 1), (null, false, 1, 1, 2, 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Colonne "AVALAIBILITY_DATE" non trouvée
+Column "AVALAIBILITY_DATE" not found; SQL statement:
+insert into reservation (avalaibility_date, notification_is_sent, book_id, library_id, registered_user_id, position) VALUES (null, false, 1, 1, 3, 1), (null, false, 1, 1, 2, 2) [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.fabienit.biblioapi.BiblioApiApplication.main(BiblioApiApplication.java:10)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #6 of URL [file:/C:/Users/FaB/Git/Projet%207/bibliothequeocp7/backendRestApiBiblio/target/classes/data.sql]: insert into reservation (avalaibility_date, notification_is_sent, book_id, library_id, registered_user_id, position) VALUES (null, false, 1, 1, 3, 1), (null, false, 1, 1, 2, 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Colonne "AVALAIBILITY_DATE" non trouvée
+Column "AVALAIBILITY_DATE" not found; SQL statement:
+insert into reservation (avalaibility_date, notification_is_sent, book_id, library_id, registered_user_id, position) VALUES (null, false, 1, 1, 3, 1), (null, false, 1, 1, 2, 2) [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:626)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:99)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:90)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 15 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Colonne "AVALAIBILITY_DATE" non trouvée
+Column "AVALAIBILITY_DATE" not found; SQL statement:
+insert into reservation (avalaibility_date, notification_is_sent, book_id, library_id, registered_user_id, position) VALUES (null, false, 1, 1, 3, 1), (null, false, 1, 1, 2, 2) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:605)
+	... 31 common frames omitted
+2022-01-24 22:19:40,154 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
+2022-01-24 22:24:32,972 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
+2022-01-24 23:45:04,236 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
