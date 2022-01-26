@@ -1,10 +1,10 @@
-package com.fabienit.webapp.service;
+package com.fabienit.biblioweb.service;
+
+import com.fabienit.biblioweb.model.beans.BorrowBean;
+import com.fabienit.biblioweb.model.dto.RegisteredUserDto;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
-
-import com.fabienit.webapp.model.beans.BorrowBean;
-import com.fabienit.webapp.model.dto.RegisteredUserDto;
-import org.springframework.http.ResponseEntity;
 
 /**
  * WebappService

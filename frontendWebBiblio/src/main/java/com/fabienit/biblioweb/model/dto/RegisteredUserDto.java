@@ -1,11 +1,11 @@
-package com.fabienit.webapp.model.dto;
+package com.fabienit.biblioweb.model.dto;
+
+import com.fabienit.biblioweb.validation.PasswordMatches;
+import com.fabienit.biblioweb.validation.ValidEmail;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
-import com.fabienit.webapp.validation.PasswordMatches;
-import com.fabienit.webapp.validation.ValidEmail;
 
 /**
  * RegisteredUserBean

@@ -1,4 +1,4 @@
-package com.oc.batch.config;
+package com.fabienit.bibliobatch.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;

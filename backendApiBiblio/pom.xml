@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.fabienit</groupId>
-	<artifactId>spring-boot-data-jpa</artifactId>
+	<artifactId>biblioapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>biblioapi</name>
 	<description>Demo project for Spring Boot Apis CRUD using Spring Data JPA</description>

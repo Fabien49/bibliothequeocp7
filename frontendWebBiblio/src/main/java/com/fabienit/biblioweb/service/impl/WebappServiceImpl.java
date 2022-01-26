@@ -1,15 +1,11 @@
-package com.fabienit.webapp.service.impl;
+package com.fabienit.biblioweb.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.fabienit.webapp.service.WebappService;
-import com.fabienit.webapp.model.beans.BorrowBean;
-import com.fabienit.webapp.model.beans.RegisteredUserBean;
-import com.fabienit.webapp.model.dto.RegisteredUserDto;
-import com.fabienit.webapp.security.UserPrincipal;
-import com.fabienit.webapp.web.proxies.apiproxies.ApiProxy;
-
+import com.fabienit.biblioweb.model.beans.BorrowBean;
+import com.fabienit.biblioweb.model.beans.RegisteredUserBean;
+import com.fabienit.biblioweb.model.dto.RegisteredUserDto;
+import com.fabienit.biblioweb.security.UserPrincipal;
+import com.fabienit.biblioweb.service.WebappService;
+import com.fabienit.biblioweb.web.proxies.ApiProxy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * WebappServiceImpl

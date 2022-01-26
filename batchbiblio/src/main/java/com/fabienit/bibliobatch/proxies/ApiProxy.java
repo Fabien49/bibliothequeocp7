@@ -1,11 +1,10 @@
-package com.oc.batch.web.proxies;
+package com.fabienit.bibliobatch.proxies;
 
-import java.util.List;
-
-import com.oc.batch.model.beans.BorrowBean;
-
+import com.fabienit.bibliobatch.beans.BorrowBean;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
 
 /**
  * ApiProxi

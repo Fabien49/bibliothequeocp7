@@ -1,10 +1,9 @@
-package com.fabienit.webapp.validation;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package com.fabienit.biblioweb.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * EmailValidator

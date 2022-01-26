@@ -1,13 +1,8 @@
-package com.oc.batch.service.impl;
+package com.fabienit.bibliobatch.service.impl;
 
-import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.List;
-
-import com.oc.batch.model.beans.BorrowBean;
-import com.oc.batch.service.EmailService;
-import com.oc.batch.web.proxies.ApiProxy;
-
+import com.fabienit.bibliobatch.beans.BorrowBean;
+import com.fabienit.bibliobatch.proxies.ApiProxy;
+import com.fabienit.bibliobatch.service.EmailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +11,10 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * EmailServiceImpl

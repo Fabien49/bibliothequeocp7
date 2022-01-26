@@ -71,9 +71,9 @@ Le Messie des Fremen est-il déjà né dans l''Empire?',
 -- Create Library
 insert into library (name)
 VALUES
-  ('Bayonne'),
-  ('Anglet'),
-  ('Biarritz');
+  ('Toussaint'),
+  ('Justice'),
+  ('Annie-Fratellini');
 
 -- Create Available copie
 

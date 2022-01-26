@@ -1,9 +1,8 @@
-package com.fabienit.webapp.config;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+package com.fabienit.biblioweb.config;
 
 import feign.auth.BasicAuthRequestInterceptor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * FeignConfig
@@ -13,6 +12,6 @@ public class FeignConfig {
 
     @Bean
     public BasicAuthRequestInterceptor basicAuthRequestInterceptor() {
-        return new BasicAuthRequestInterceptor("OCBibliotheque-client", "OCB2020");
+        return new BasicAuthRequestInterceptor("fabien", "123456");
     }
 }

@@ -7,8 +7,12 @@
         <option value="$PROJECT_DIR$/backendRestApiBiblio/pom.xml" />
         <option value="$PROJECT_DIR$/../frontendWebBiblio/frontendWebBiblio/pom.xml" />
         <option value="$PROJECT_DIR$/frontendWebBiblio/pom.xml" />
+        <option value="$PROJECT_DIR$/backendApiBiblio/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://www.thymeleaf.org" location="$PROJECT_DIR$" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

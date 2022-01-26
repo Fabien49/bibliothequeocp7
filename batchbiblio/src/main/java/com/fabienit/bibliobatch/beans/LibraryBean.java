@@ -1,4 +1,4 @@
-package com.oc.batch.model.beans;
+package com.fabienit.bibliobatch.beans;
 
 /**
  * LibraryBean

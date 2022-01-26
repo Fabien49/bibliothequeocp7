@@ -1,6 +1,6 @@
-package com.fabienit.webapp.model.beans;
+package com.fabienit.biblioweb.model.beans;
 
-import com.fabienit.webapp.validation.ValidEmail;
+import com.fabienit.biblioweb.validation.ValidEmail;
 
 /**
  * RegisteredUserBean

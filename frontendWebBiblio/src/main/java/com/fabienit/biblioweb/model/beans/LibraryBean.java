@@ -1,4 +1,4 @@
-package com.fabienit.webapp.model.beans;
+package com.fabienit.biblioweb.model.beans;
 
 /**
  * LibraryBean

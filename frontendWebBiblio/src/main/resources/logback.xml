@@ -17,7 +17,7 @@
             <fileNamePattern>logs/archived/batch.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!-- each archived file, size max 10MB -->
             <maxFileSize>10MB</maxFileSize>
-            <!-- total size of all archive files, if total size > 20GB, 
+            <!-- total size of all archive files, if total size > 20GB,
 				it will delete old archived file -->
             <totalSizeCap>20GB</totalSizeCap>
             <!-- 60 days to keep -->

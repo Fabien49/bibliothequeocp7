@@ -1,8 +1,7 @@
-package com.fabienit.webapp.security;
+package com.fabienit.biblioweb.security;
 
-import com.fabienit.webapp.model.beans.RegisteredUserBean;
-import com.fabienit.webapp.web.proxies.apiproxies.ApiProxy;
-
+import com.fabienit.biblioweb.model.beans.RegisteredUserBean;
+import com.fabienit.biblioweb.web.proxies.ApiProxy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +16,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserPrincipalDetailsService implements UserDetailsService {
 
-    @Autowired
-    private ApiProxy apiProxy;
+        @Autowired
+        private ApiProxy apiProxy;
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
+
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

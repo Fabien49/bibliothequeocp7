@@ -1,9 +1,9 @@
-package com.fabienit.webapp.validation;
+package com.fabienit.biblioweb.validation;
+
+import com.fabienit.biblioweb.model.dto.RegisteredUserDto;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-
-import com.fabienit.webapp.model.dto.RegisteredUserDto;
 
 /**
  * PasswordMatchesValidator

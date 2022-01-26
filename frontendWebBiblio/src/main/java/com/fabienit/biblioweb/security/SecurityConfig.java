@@ -1,4 +1,4 @@
-package com.fabienit.webapp.security;
+package com.fabienit.biblioweb.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

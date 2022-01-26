@@ -1,16 +1,12 @@
-package com.fabienit.webapp.web.controllers;
+package com.fabienit.biblioweb.web.controllers;
 
-import java.util.List;
-
-import javax.validation.Valid;
-
-import com.fabienit.webapp.service.WebappService;
-import com.fabienit.webapp.web.proxies.apiproxies.ApiProxy;
-import com.fabienit.webapp.model.beans.AvailableCopieBean;
-import com.fabienit.webapp.model.beans.BookBean;
-import com.fabienit.webapp.model.beans.BorrowBean;
-import com.fabienit.webapp.model.dto.RegisteredUserDto;
-
+import com.fabienit.biblioweb.model.beans.AvailableCopieBean;
+import com.fabienit.biblioweb.model.beans.BookBean;
+import com.fabienit.biblioweb.model.beans.BorrowBean;
+import com.fabienit.biblioweb.model.dto.RegisteredUserDto;
+import com.fabienit.biblioweb.service.WebappService;
+import com.fabienit.biblioweb.web.proxies.ApiProxy;
+import feign.FeignException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +17,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import feign.FeignException;
-
-import org.springframework.web.bind.annotation.PostMapping;
+import javax.validation.Valid;
+import java.util.List;
 
 /**
  * WebappController

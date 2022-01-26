@@ -1,4 +1,4 @@
-package com.fabienit.biblioweb.web.proxies.apiproxies;
+package com.fabienit.biblioweb.web.proxies;
 
 import com.fabienit.biblioweb.model.beans.*;
 import org.springframework.cloud.openfeign.FeignClient;

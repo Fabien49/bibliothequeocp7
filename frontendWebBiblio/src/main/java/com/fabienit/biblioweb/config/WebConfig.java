@@ -1,4 +1,4 @@
-package com.fabienit.webapp.config;
+package com.fabienit.biblioweb.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

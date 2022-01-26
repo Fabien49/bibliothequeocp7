@@ -1,4 +1,4 @@
-package com.oc.batch.service;
+package com.fabienit.bibliobatch.service;
 
 
 /**

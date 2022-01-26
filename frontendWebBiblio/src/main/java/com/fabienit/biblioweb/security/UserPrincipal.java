@@ -1,14 +1,13 @@
-package com.fabienit.webapp.security;
+package com.fabienit.biblioweb.security;
+
+import com.fabienit.biblioweb.model.beans.RegisteredUserBean;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
-import com.fabienit.webapp.model.beans.RegisteredUserBean;
-
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  * UserPrincipal
