@@ -16,7 +16,7 @@ public class FeignConfig {
      */
     @Bean
     public BasicAuthRequestInterceptor basicAuthRequestInterceptor() {
-        return new BasicAuthRequestInterceptor("OCBibliotheque-client", "OCB2020");
+        return new BasicAuthRequestInterceptor("fabien", "123456");
     }
     
 }

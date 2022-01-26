@@ -22,11 +22,11 @@ import java.util.List;
 @Service
 public class EmailServiceImpl implements EmailService {
 
-    @Autowired
-    private JavaMailSender emailSender;
+   @Autowired
+    JavaMailSender emailSender;
 
     @Autowired
-    private ApiProxy apiProxy;
+            ApiProxy apiProxy;
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 

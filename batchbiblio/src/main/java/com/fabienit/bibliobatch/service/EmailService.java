@@ -1,6 +1,5 @@
 package com.fabienit.bibliobatch.service;
 
-
 /**
  * EmailService
  */
