@@ -11,7 +11,7 @@ public class RessourceNotFoundException extends RuntimeException {
 
     /**
      * This exception is thrown if the app cannot find a specific entity in the
-     * database, return HTTP status 400 NOT FOUND
+     * database, return HTTP status 404 NOT FOUND
      */
     private static final long serialVersionUID = 1L;
 

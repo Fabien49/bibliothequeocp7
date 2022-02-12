@@ -79,8 +79,8 @@ public class EmailServiceImpl implements EmailService {
         String subject = "Date de retour dépassée du livre " + title;
         // Build "text" parameter
         String text = "L'emprunt du livre \"" + title + "\""
-                + " a dépassé sa date d'échéance, veuillez nous ramener le livre à la bibliothèque de " + library
-                + " dans les plus brefs délais." + newLine + "Cordialement." + newLine + "OC-Bibliothèque.";
+                + " a dépassé sa date d'échéance, veuillez nous ramener le livre à la bibliothèque " + library
+                + " dans les plus brefs délais." + newLine + "Cordialement." + newLine + "Les Bibliothèques de la ville d'Angers.";
         // Fill Hashmap with data
         mailData.put("to", to);
         mailData.put("subject", subject);

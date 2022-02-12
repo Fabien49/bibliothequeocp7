@@ -34,7 +34,7 @@
 	<!-- <logger name="org.hibernate.stat" level="DEBUG"/> -->
 	
 	
-    <logger name="com.oc" level="debug" additivity="false">
+    <logger name="com.fabienit" level="debug" additivity="false">
         <appender-ref ref="FILE-ROLLING"/>
 		<appender-ref ref="STDOUT" />
     </logger>

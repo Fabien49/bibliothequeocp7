@@ -37,15 +37,15 @@ public class WebappController {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    /* @GetMapping(value = "/")
+     @GetMapping(value = "/")
     public String mainPage() {
 
         logger.info("Reach url: / - GET");
 
-        return "MainPage";
-    } */
+        return "Home";
+    }
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/books")
     public String getBooksPage(Model model, @RequestParam(required = false) String query) {
 
         logger.info("Reach url: /books - GET");
@@ -131,6 +131,9 @@ public class WebappController {
     public String extendBorrowDuration(@RequestParam int borrowId) {
 
         logger.info("Reach url: /profile - POST");
+
+        // Get Borrow
+        BorrowBean borrowBean = apiProxy.getBorrowById(borrowId);
 
         // Extend borrow duration
         webappService.extendBorrowDuration(borrowId);

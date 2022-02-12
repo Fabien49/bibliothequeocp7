@@ -1,0 +1,8 @@
+2022-02-08 00:01:53,511 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
+2022-02-08 16:21:12,422 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
+2022-02-08 16:35:49,100 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8000-exec-4] Violation d'index unique ou clé primaire: "PUBLIC.UK_4QKJFWB01BH3Q0R5X8UY5O67V_INDEX_6 ON PUBLIC.REGISTERED_USER(EMAIL) VALUES 1"
+Unique index or primary key violation: "PUBLIC.UK_4QKJFWB01BH3Q0R5X8UY5O67V_INDEX_6 ON PUBLIC.REGISTERED_USER(EMAIL) VALUES 1"; SQL statement:
+insert into registered_user (id, email, first_name, last_name, password, roles) values (null, ?, ?, ?, ?, ?) [23505-200]
+2022-02-08 16:39:47,520 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8000-exec-7] Violation d'index unique ou clé primaire: "PUBLIC.UK_BTD9WD6DHLLIBWB82N1NOHM2M_INDEX_3 ON PUBLIC.LIBRARY(NAME) VALUES 1"
+Unique index or primary key violation: "PUBLIC.UK_BTD9WD6DHLLIBWB82N1NOHM2M_INDEX_3 ON PUBLIC.LIBRARY(NAME) VALUES 1"; SQL statement:
+insert into library (id, name) values (null, ?) [23505-200]

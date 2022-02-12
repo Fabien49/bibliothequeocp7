@@ -2,31 +2,31 @@
 insert into registered_user (email, first_name, last_name, password,roles)
 VALUES
   (
-    'ccathala.dev@gmail.com',
-    'user',
-    'userLastName',
-    '$2a$10$1nAVWVhiESnNhYSTMr03N.w2tR0zeqS5YYq9rK7Atb503qa7ksc8K',
+  	'fabien@gmail.com',
+    'Fabien',
+    'Chapeau',
+    '$2a$10$jPUTDV6/9AkC7NRPPzmvXuLJlfnKoAYo.uJuZc0aeJHGum.LpxO0a',
     'USER'
   ),
   (
-  	'agetten.dev@gmail.com',
-    'user',
+  	'test1@gmail.com',
+    'userName',
     'userLastName',
-    '$2a$10$1nAVWVhiESnNhYSTMr03N.w2tR0zeqS5YYq9rK7Atb503qa7ksc8K',
+    '$2a$10$jPUTDV6/9AkC7NRPPzmvXuLJlfnKoAYo.uJuZc0aeJHGum.LpxO0a',
     'USER'
   ),
   (
-  	'dvalat.dev@gmail.com',
-    'user',
+  	'test2@gmail.com',
+    'userName',
     'userLastName',
-    '$2a$10$1nAVWVhiESnNhYSTMr03N.w2tR0zeqS5YYq9rK7Atb503qa7ksc8K',
+    '$2a$10$jPUTDV6/9AkC7NRPPzmvXuLJlfnKoAYo.uJuZc0aeJHGum.LpxO0a',
     'USER'
   ),
   (
-  	'slassy.dev@gmail.com',
-    'user',
+  	'test3@gmail.com',
+    'userName',
     'userLastName',
-    '$2a$10$1nAVWVhiESnNhYSTMr03N.w2tR0zeqS5YYq9rK7Atb503qa7ksc8K',
+    '$2a$10$jPUTDV6/9AkC7NRPPzmvXuLJlfnKoAYo.uJuZc0aeJHGum.LpxO0a',
     'USER'
   );
 
@@ -41,14 +41,20 @@ insert into book (
   )
 VALUES
   (
-    'Franck',
-    'Herbert',
-    '/covers/dune_cover.jpg',
+      'George',
+      'Orwell',
+      '/covers/1984.jpg',
+      '1949-06-08',
+      'Année 1984 en Océanie. 1984 ? C''est en tout cas ce qu''il semble à Winston, qui ne saurait toutefois en jurer. Le passé a été oblitéré et réinventé, et les événements les plus récents sont susceptibles d''être modifiés. Winston est lui-même chargé de récrire les archives qui contredisent le présent et les promesses de Big Brother. Grâce à une technologie de pointe, ce dernier sait tout, voit tout. Il n''est pas une âme dont il ne puisse connaître les pensées. On ne peut se fier à personne et les enfants sont encore les meilleurs espions qui soient. Liberté est Servitude. Ignorance est Puissance. Telles sont les devises du régime de Big Brother. La plupart des Océaniens n''y voient guère à redire, surtout les plus jeunes qui n''ont pas connu l''époque de leurs grands-parents et le sens initial du mot "libre". Winston refuse cependant de perdre espoir. Il entame une liaison secrète et hautement dangereuse avec l''insoumise Julia et tous deux vont tenter d''intégrer la Fraternité, une organisation ayant pour but de renverser Big Brother.',
+      '1984'
+    ),
+    (
+    'Philip K.',
+    'Dick',
+    '/covers/minority_report.jpg',
     '2005-06-09',
-    'Il n''y a pas, dans tout l''Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse: l''épice de longue vie, née du désert, et que tout l''univers achète à n''importe quel prix. Richesse très convoitée : quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adaptés à une vie très dure en préservant leur liberté, leurs coutumes et leur foi mystique. Ils rêvent du prophète qui proclamera la guerre sainte et qui, à la tête des commandos de la mort, changera le cours de l''histoire.
-Cependant les Révérendes Mères du Bene Gesserit poursuivent leur programme millénaire de sélection génétique ; elles veulent créer un homme qui concrétisera tous les dons latents de l''espèce. Tout est fécond dans ce programme, y compris ses défaillances.
-Le Messie des Fremen est-il déjà né dans l''Empire?',
-    'Dune I'
+    'Washington, 2054. John Anderton est membre de Précrime, une unité gouvernementale utilisant les dons de prescience de trois mutants, les précogs, pour arrêter les criminels avant leur passage à l''acte. Avant même qu''ils aient imaginé de passer à l''acte. Anderton a une confiance aveugle dans les prédictions des précogs. Mais quand, chasseur devenu gibier, il se retrouvera lui-même accusé du meurtre d''un homme qu''il n''a jamais rencontré, il lui faudra découvrir les véritables rouages de Précrime pour prouver son innocence.',
+    'Minority Report'
   ),
   (
     'J.R.R.',
@@ -65,7 +71,15 @@ Le Messie des Fremen est-il déjà né dans l''Empire?',
     '2002-08-24',
     'Le temps que vous lisiez ces lignes, sept cents millions de fourmis seront nées sur la planète. Sept cents millions d''individus dans une communauté estimée à un milliard de milliards, et qui a ses villes, sa hiérarchie, ses colonies, son langage, sa production industrielle, ses esclaves, ses mercenaires... Ses armes aussi. Terriblement destructrices. Lorsqu''il entre dans la cave de la maison léguée par un vieil oncle entomologiste, Jonathan Wells est loin de se douter qu''il va à leur rencontre. A sa suite, nous allons découvrir le monde fabuleusement riche, monstrueux et fascinant de ces "infra terrestres", au fil d''un thriller unique en son genre, où le suspense et l''horreur reposent à chaque page sur les données scientifiques les plus rigoureuses. Voici pour la première fois un roman dont les héros sont des... fourmis.',
     'Les fourmis'
-  );
+  ),
+    (
+      'Bernard',
+      'Werber',
+      '/covers/la_prophetie_des_abeilles.jpg',
+      '2021-10-01',
+      'Depuis la nuit des temps, les abeilles détiennent le secret du destin de l’Humanité. Ce secret est annoncé dans une prophétie écrite à Jérusalem il y 1000 ans par un chevalier Templier. Mais sa trace est perdue, et pour la retrouver, il faudra remonter dans le temps, traverser époques et continents, affronter tous les dangers. Êtes-vous prêts à payer ce prix pour sauver votre futur ?',
+      'La Prophéthie des Abeilles'
+    );
 
 
 -- Create Library
@@ -88,7 +102,13 @@ VALUES
 (2, 3, 2, 2),
 (3, 1, 2, 0),
 (3, 2, 2, 2),
-(3, 3, 2, 2);
+(3, 3, 2, 2),
+(4, 1, 3, 1),
+(4, 2, 2, 1),
+(4, 3, 2, 1),
+(5, 1, 4, 2),
+(5, 2, 4, 3),
+(5, 3, 3, 2);
 
 -- Create Borrow
 insert into borrow (
@@ -145,13 +165,15 @@ VALUES
     3,
     1,
     3
-  );
+  ),
+    (
+      false,
+      '2021-02-17',
+      false,
+      '2021-03-14',
+      4,
+      2,
+      2
+    );
 
--- Create Reservation
-
--- insert into reservation
---(avalaibility_date, notification_is_sent, book_id, library_id, registered_user_id, position)
---VALUES
---(null, false, 1, 1, 3, 1),
---(null, false, 1, 1, 2, 2);
 

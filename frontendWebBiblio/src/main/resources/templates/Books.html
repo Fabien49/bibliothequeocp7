@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -16,58 +16,57 @@
       crossorigin="anonymous"
     />
 
-    <title>Livres OC-Bibliothèque</title>
+    <title>Livres des Bibliothèques d'Angers</title>
   </head>
 
   <body>
     <div class="container-fluid px-0">
       <div th:replace="Header :: header"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="border-secondary shadow jumbotron">
+              <center><form action="/books" class="form-inline col-lg-5 col-xl-6 mr-auto px-0" method="GET">
+                <input class="form-control col-12 col-lg-7 col-xl-8 mb-2 mr-sm-2 mb-lg-0" type="text" name="query" placeholder="Titre, auteur,..."
+                       aria-label="Search" />
+                <button class="btn btn-success mb-2 mr-2 mb-lg-0" type="submit">
+                  Rechercher
+                </button>
+              </form>
+                <form class="form-inline my-lg-0" form-method="post" th:action="@{/logout}">
+                </form></center>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div
-        th:each="book : ${books}"
-        style="max-width:900px;margin-left: auto;margin-right: auto;margin-top:24px;padding: 24px;"
-      >
-        <div class="card">
+
+        <div class="row">
+      <div th:each="book : ${books}" class="col-12 my-4 col-lg-6" >
+        <div class="card h-100">
           <div class="card-header">
-            <h2
-              th:text="${book.title + ' - ' + book.authorFirstName + ' ' + book.authorLastName}"
-            >
-              Title and author
-            </h2>
+            <h2 th:text="${book.title + ' - ' + book.authorFirstName + ' ' + book.authorLastName}">Title and author</h2>
           </div>
           <div class="card-body row">
             <div class="col-12 col-md-4 my-auto text-center">
-              <img
-                src="pictureURL"
-                th:attr="src=${book.pictureURL}"
-                class="card-img rounded mb-2 mb-md-0 "
-                style="max-width: 300px;"
-                alt="..."
-              />
+              <img src="pictureURL" th:attr="src=${book.pictureURL}" class="card-img rounded mb-2 mb-md-0 " style="max-width: 300px;" alt="..."/>
             </div>
-
             <div class="col-12 col-md-8 my-2">
               <h6 th:text="${'Publication: ' + book.publicationDate}"></h6>
               <h6>Synopsis:</h6>
-              <p
-                class="card-text text-justify overflow-auto"
-                th:text="${book.synopsis}"
-              ></p>
-              <button
-                type="button"
-                class="booksAvailabilityButton btn btn-info"
-                id=""
-                th:attr="id=${book.id + '_bookId'}"
-                data-toggle="modal"
-                data-target="#availableCopiesModal"
-              >
+              <p class="card-text text-justify overflow-auto" th:text="${book.synopsis}"></p>
+              <button type="button" class="booksAvailabilityButton btn btn-info" id="" th:attr="id=${book.id + '_bookId'}" data-toggle="modal" data-target="#availableCopiesModal">
                 Disponibilités
               </button>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </div>
+    </div>
+
 
     <!-- Modal -->
     <div

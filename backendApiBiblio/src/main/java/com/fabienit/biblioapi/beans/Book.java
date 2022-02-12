@@ -37,7 +37,7 @@ public class Book {
     private LocalDate publicationDate;
 
     @NotEmpty
-    @Length(max = 1000)
+    @Length(max = 1250)
     private String synopsis;
 
     @NotEmpty
