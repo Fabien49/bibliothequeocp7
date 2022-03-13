@@ -1,0 +1,43 @@
+2022-02-13 12:00:53,673 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 14116 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7\backendApiBiblio)
+2022-02-13 12:00:53,685 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 12:00:53,686 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 12:00:59,400 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$4fd0a089 [main] Set Swagger2 documentation
+2022-02-13 12:01:00,219 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 6.971 seconds (JVM running for 7.841)
+2022-02-13 12:05:30,607 INFO com.fabienit.biblioapi.web.controllers.BorrowController [http-nio-8001-exec-1] Providing borrow resource from database: all borrow list
+2022-02-13 12:07:32,698 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Providing book resource from database: all book list
+2022-02-13 12:07:32,704 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Splitting query, query: 
+2022-02-13 12:07:32,909 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-3] Providing availablecopie resource from database: all availablecopie list
+2022-02-13 12:09:30,661 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 7688 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7\backendApiBiblio)
+2022-02-13 12:09:30,680 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 12:09:30,681 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 12:09:36,816 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$d7bdf2e8 [main] Set Swagger2 documentation
+2022-02-13 12:09:37,716 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 7.668 seconds (JVM running for 8.566)
+2022-02-13 12:11:05,638 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 12200 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7\backendApiBiblio)
+2022-02-13 12:11:05,642 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 12:11:05,644 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 12:11:11,382 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$c4c1589e [main] Set Swagger2 documentation
+2022-02-13 12:11:12,171 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 6.965 seconds (JVM running for 7.931)
+2022-02-13 12:12:02,554 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Providing book resource from database: all book list
+2022-02-13 12:12:02,753 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Splitting query, query: 
+2022-02-13 12:12:02,941 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-2] Providing availablecopie resource from database: all availablecopie list
+2022-02-13 12:13:22,859 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 5580 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7\backendApiBiblio)
+2022-02-13 12:13:22,862 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 12:13:22,864 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 12:13:29,235 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$89dad89c [main] Set Swagger2 documentation
+2022-02-13 12:13:30,065 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 7.632 seconds (JVM running for 8.649)
+2022-02-13 12:20:13,883 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 9736 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7\backendApiBiblio)
+2022-02-13 12:20:13,892 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 12:20:13,893 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 12:20:20,965 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$282e5dde [main] Set Swagger2 documentation
+2022-02-13 12:20:21,738 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 8.366 seconds (JVM running for 9.546)
+2022-02-13 12:23:32,894 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 16904 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7\backendApiBiblio)
+2022-02-13 12:23:32,898 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 12:23:32,903 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 12:23:40,094 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$e3036e1e [main] Set Swagger2 documentation
+2022-02-13 12:23:41,095 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 8.783 seconds (JVM running for 9.813)
+2022-02-13 12:24:32,812 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Providing book resource from database: all book list
+2022-02-13 12:24:33,026 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Splitting query, query: 
+2022-02-13 12:24:33,213 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-7] Providing availablecopie resource from database: all availablecopie list
+2022-02-13 12:24:56,153 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-8] Providing book resource from database: all book list
+2022-02-13 12:24:56,159 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-8] Splitting query, query: 
+2022-02-13 12:24:56,285 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-4] Providing availablecopie resource from database: all availablecopie list

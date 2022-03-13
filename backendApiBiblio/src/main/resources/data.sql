@@ -1,7 +1,8 @@
 -- Create user
-insert into registered_user (email, first_name, last_name, password,roles)
+INSERT INTO registered_user ( id , email, first_name, last_name, password, roles)
 VALUES
   (
+    1,
   	'fabien@gmail.com',
     'Fabien',
     'Chapeau',
@@ -9,6 +10,7 @@ VALUES
     'USER'
   ),
   (
+    2,
   	'test1@gmail.com',
     'userName',
     'userLastName',
@@ -16,6 +18,7 @@ VALUES
     'USER'
   ),
   (
+    3,
   	'test2@gmail.com',
     'userName',
     'userLastName',
@@ -23,6 +26,7 @@ VALUES
     'USER'
   ),
   (
+    4,
   	'test3@gmail.com',
     'userName',
     'userLastName',
@@ -175,5 +179,3 @@ VALUES
       2,
       2
     );
-
-

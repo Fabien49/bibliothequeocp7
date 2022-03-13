@@ -43,6 +43,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -76,6 +77,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>sql-maven-plugin</artifactId>
+			<version>1.5</version>
 			</plugin>
 		</plugins>
 	</build>

@@ -13,6 +13,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 
@@ -73,14 +74,17 @@ public class EmailServiceImpl implements EmailService {
         // Extract data from borrow bean
         String title = lateBorrow.getBook().getTitle();
         String library = lateBorrow.getLibrary().getName();
+        LocalDate returnDate = lateBorrow.getReturnDate();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy");
+        String returnDateFormatter = returnDate.format(formatter);
         // Build "to" parameter
         String to = lateBorrow.getRegistereduser().getEmail();
         // Build "subject" parameter
         String subject = "Date de retour dépassée du livre " + title;
         // Build "text" parameter
-        String text = "L'emprunt du livre \"" + title + "\""
-                + " a dépassé sa date d'échéance, veuillez nous ramener le livre à la bibliothèque " + library
-                + " dans les plus brefs délais." + newLine + "Cordialement." + newLine + "Les Bibliothèques de la ville d'Angers.";
+        String text = "Bonjour," + newLine  + newLine + "L'emprunt du livre \"" + title + "\""
+                + " a dépassé sa date d'échéance qui était le " + returnDateFormatter + "." + newLine+ "Veuillez nous ramener le livre à la bibliothèque " + library
+                + " dans les plus brefs délais." + newLine + newLine + "Cordialement." + newLine + newLine + "Les Bibliothèques de la ville d'Angers.";
         // Fill Hashmap with data
         mailData.put("to", to);
         mailData.put("subject", subject);

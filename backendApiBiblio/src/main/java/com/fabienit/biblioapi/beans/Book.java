@@ -14,6 +14,7 @@ import java.util.Set;
  * Book
  */
 @Entity
+@Table (name = "book")
 public class Book {
 
     @Id

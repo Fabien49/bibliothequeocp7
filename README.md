@@ -184,7 +184,7 @@ Mot de passe : 123456
 
 ## Aperçu du site
 
-URL : https://localhost:8002
+URL : http://localhost:8002
 
 ## Auteur
 

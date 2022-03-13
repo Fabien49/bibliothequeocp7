@@ -1,0 +1,24 @@
+2022-02-13 11:06:50,300 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 10876 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7)
+2022-02-13 11:06:50,338 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 11:06:50,339 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 11:07:03,285 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$3083134d [main] Set Swagger2 documentation
+2022-02-13 11:07:05,317 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 15.978 seconds (JVM running for 17.381)
+2022-02-13 11:07:48,972 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Providing book resource from database: all book list
+2022-02-13 11:07:49,390 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Splitting query, query: 
+2022-02-13 11:07:49,640 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-2] Providing availablecopie resource from database: all availablecopie list
+2022-02-13 11:08:43,476 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-5] Providing book resource from database: all book list
+2022-02-13 11:08:43,479 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-5] Splitting query, query: 
+2022-02-13 11:08:43,572 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-6] Providing availablecopie resource from database: all availablecopie list
+2022-02-13 11:26:04,457 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
+2022-02-13 11:26:16,933 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 7180 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7)
+2022-02-13 11:26:16,943 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 11:26:16,943 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 11:26:27,519 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$c13b3a2 [main] Set Swagger2 documentation
+2022-02-13 11:26:29,203 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 13.068 seconds (JVM running for 15.717)
+2022-02-13 11:57:09,162 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
+2022-02-13 11:57:15,542 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 1444 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7)
+2022-02-13 11:57:15,546 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-02-13 11:57:15,547 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-02-13 11:57:26,704 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$22611f74 [main] Set Swagger2 documentation
+2022-02-13 11:57:29,806 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 15.156 seconds (JVM running for 16.481)
+2022-02-13 12:00:12,496 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
