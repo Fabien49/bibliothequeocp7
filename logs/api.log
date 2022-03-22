@@ -1,3 +1,0 @@
-2022-03-06 16:49:58,783 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 18728 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7)
-2022-03-06 16:49:58,798 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
-2022-03-06 16:49:58,799 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev

@@ -1,1 +1,0 @@
-2022-02-02 23:51:02,506 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists

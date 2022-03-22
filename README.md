@@ -1,4 +1,6 @@
-# Bibliothequeocp7
+#Bibliothequeocp7
+
+---
 
 ## Présentation
 
@@ -33,7 +35,8 @@ Les fonctions suivantes sont implémentées:
 
 ### Paramétrage
 
-Chaque service dispose à l'intérieur de son répertoire, à l'emplacement /src/main/resources d'un fichier application.properties. Celui-ci permet de paramétrer certaines propriétés:
+Chaque service dispose à l'intérieur de son répertoire, à l'emplacement /src/main/resources d'un fichier application.properties. Un fichier application-prod.properties et application-dev.properties sont en plus au niveau de l'API. 
+Ceux-ci permetent de paramétrer certaines propriétés comme l'exemple ci-dessous:
 
 #### Port
 
@@ -47,13 +50,43 @@ server.port=8001
 spring.application.name=biblio-api
 ```
 
-#### Données de connexion à la base de données (API seulement)
+#### Données de connexion à la base de données (API seulement) en mode prod (fichier application-prod.properties)
 
 ```properties
-spring.jpa.hibernate.ddl-auto=update
-spring.datasource.url=jdbc:mysql://localhost:3306/bibliop7?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=admin
+# ===============================
+# = DATA SOURCE
+# ===============================
+spring.datasource.url= jdbc:mysql://localhost:3306/bibliop7?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+spring.datasource.username= root
+spring.datasource.password= admin
+spring.datasource.testWhileIdle = true
+
+
+# ===============================
+# = JPA / HIBERNATE
+# ===============================
+spring.jpa.show-sql = true
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+```
+
+#### Données de connexion à la base de données H2 (API seulement) en mode dev (fichier application-dev.properties)
+
+```properties
+# H2
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2web
+spring.h2.console.settings.web-allow-others=true
+
+# Datasource
+spring.datasource.url=jdbc:h2:mem:contactmanager;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
 #### Identifiants Basic Auth (API seulement)
@@ -80,7 +113,7 @@ Seconde=00
 Minute=00  
 Heure=10
 
-L'envoie des mails de relance ce fera tous les jours à 10h 00min 00s
+Dans cet exemple, l'envoi des mails de relance ce fera tous les jours à 10h 00min 00s. Il est modifiable dans le fichier application.properties du Batch.
 
 #### Configuration du compte SMTP
 
@@ -99,6 +132,7 @@ mail.password=""
 
 ##### Compte Gmail
 
+
 ```properties
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
@@ -112,53 +146,68 @@ Remplacer les valeurs username et password par les identifiants du compte Gmail.
 
 ***Attention un mot de passe d'application est nécessaire, plus d'information [ici](https://support.google.com/mail/answer/185833?hl=fr)***
 
-### Démarrage
+## Démarrage
 
-#### I. Développement
+### I. Développement
 
-1. Ouvrez le répertoire du service choisi, ex: /backendApiBiblio
+1. Activer le mode développeur dans le fichier application.properties du répertoire /backendApiBiblio
+* Mettre en commentaire la ligne (mettre un # devant la ligne comme ci-dessous) qu'on souhaite désactiver si ce n'est pas déjà le cas.
+ ```properties
+#spring.profiles.active=prod  
+spring.profiles.active=dev
+``` 
 
-2. Ouvrez un terminal à cet emplacement
+2. Ouvrez le répertoire du service choisi, ex: /backendApiBiblio
 
-3. Exécuter la commande suivante:
+3. Ouvrez un terminal à cet emplacement
+
+4. Exécuter la commande suivante:
 
 ```terminal
 mvn spring-boot:run
 ```
+Cette commande va compiler le code, générer le package .jar et lancer l'application sous Tomcat.
 
-Cette commande va compiler le code et lancer la séquence de test, générer le package .jar et lancer l'application sous Tomcat.
+### III. Production
 
-#### III. Production
+1. Activer le mode production dans le fichier application.properties du répertoire /backendApiBiblio
+* Mettre en commentaire la ligne (mettre un # devant la ligne comme ci-dessous) qu'on souhaite désactiver si ce n'est pas déjà le cas.
+ ```properties
+spring.profiles.active=prod  
+#spring.profiles.active=dev
+``` 
 
-1. Ouvrez le répertoire du service choisi, ex: /backendApiBiblio
+2. Ouvrez le répertoire du service choisi, ex: /backendApiBiblio/target
 
-2. Ouvrez un terminal à cet emplacement
+3. Ouvrez un terminal à cet emplacement
 
-3. Exécuter la commande suivante:
+4. Exécuter la commande suivante:
 
 ```terminal
 java -jar application.jar
 ```
 
-Cette commande va compiler le code et lancer la séquence de test, générer le package .jar et lancer l'application sous Tomcat.
-
 Remplacez application.jar par le nom de l'application à lancer.
+
+Cette commande va compiler le code, générer le package .jar et lancer l'application sous Tomcat.
+
+
 
 ### Import des données de démonstration en mode développeur
 
 1. Activer le mode développeur dans le fichier application.properties du répertoire /backendApiBiblio
-
-2. Lancer une première fois le service api pour générer les tables dans la base de données.
-
-3. À l'aide de pgAdmin, éxécuter le script sql _data_demo.sql_.
-
-Ce fichier se trouve dans le répertoire /database
+* Mettre en commentaire la ligne (mettre un # devant la ligne comme ci-dessous) qu'on souhaite désactiver si ce n'est pas déjà le cas.  
+ ```properties
+#spring.profiles.active=prod  
+spring.profiles.active=dev
+``` 
+2. Lancer le service api pour générer les tables dans la base de données, il lira automatiquement le fichier _data.sql_ dans /ressources. Ce dernier insèrera les données dans les différentes tables créées au préalable lors de lancement de l'api.
 
 ### Import des données de démonstration
 
 1. Lancer une première fois le service api pour générer les tables dans la base de données.
 
-2. À l'aide de pgAdmin, éxécuter le script sql _data_demo.sql_.
+2. À l'aide de phpMyAdmin, éxécuter le script sql _data_demo.sql_.
 
 Ce fichier se trouve dans le répertoire /database
 
