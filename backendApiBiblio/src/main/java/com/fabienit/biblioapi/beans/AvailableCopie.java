@@ -36,7 +36,6 @@ public class AvailableCopie {
 
     public AvailableCopie() {
     }
-
     
 
     public AvailableCopieKey getId() {

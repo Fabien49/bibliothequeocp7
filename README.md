@@ -130,22 +130,6 @@ mail.username=""
 mail.password=""
 ```
 
-##### Compte Gmail
-
-
-```properties
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=username
-spring.mail.password=password
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-```
-
-Remplacer les valeurs username et password par les identifiants du compte Gmail.
-
-***Attention un mot de passe d'application est nécessaire, plus d'information [ici](https://support.google.com/mail/answer/185833?hl=fr)***
-
 ## Démarrage
 
 ### I. Développement
@@ -190,7 +174,6 @@ java -jar application.jar
 Remplacez application.jar par le nom de l'application à lancer.
 
 Cette commande va compiler le code, générer le package .jar et lancer l'application sous Tomcat.
-
 
 
 ### Import des données de démonstration en mode développeur

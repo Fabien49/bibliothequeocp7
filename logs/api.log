@@ -1,0 +1,14 @@
+2022-03-22 14:38:51,853 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Starting BiblioApiApplication on FABPC with PID 7248 (started by FaB PC in C:\Users\FaB\Git\Projet 7\bibliothequeocp7)
+2022-03-22 14:38:51,858 DEBUG com.fabienit.biblioapi.BiblioApiApplication [main] Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2022-03-22 14:38:51,858 INFO com.fabienit.biblioapi.BiblioApiApplication [main] The following profiles are active: dev
+2022-03-22 14:39:01,116 DEBUG com.fabienit.biblioapi.configuration.SwaggerConfig$$EnhancerBySpringCGLIB$$b62187f2 [main] Set Swagger2 documentation
+2022-03-22 14:39:02,287 INFO com.fabienit.biblioapi.BiblioApiApplication [main] Started BiblioApiApplication in 11.935 seconds (JVM running for 13.867)
+2022-03-22 14:42:40,272 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-8] Providing book resource from database: all book list
+2022-03-22 14:42:40,532 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-8] Splitting query, query: 
+2022-03-22 14:42:40,760 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-2] Providing availablecopie resource from database: all availablecopie list
+2022-03-22 14:42:45,272 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Providing book resource from database: all book list
+2022-03-22 14:42:45,275 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Splitting query, query: 
+2022-03-22 14:42:45,369 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-4] Providing availablecopie resource from database: all availablecopie list
+2022-03-22 14:42:47,084 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Providing book resource from database: all book list
+2022-03-22 14:42:47,086 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Splitting query, query: 
+2022-03-22 14:42:47,174 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-3] Providing availablecopie resource from database: all availablecopie list

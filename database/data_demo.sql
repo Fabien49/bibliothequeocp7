@@ -1,5 +1,5 @@
 -- Create user
-insert into registered_user (email, first_name, last_name, password,roles)
+insert into registered_user (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, email, first_name, last_name, password,roles)
 VALUES
   (
   	'fabien@gmail.com',
@@ -32,6 +32,7 @@ VALUES
 
 -- Create book
 insert into book (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     author_first_name,
     author_last_name,
     pictureurl,
@@ -83,7 +84,7 @@ VALUES
 
 
 -- Create Library
-insert into library (name)
+insert into library (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name)
 VALUES
   ('Toussaint'),
   ('Justice'),
@@ -112,6 +113,7 @@ VALUES
 
 -- Create Borrow
 insert into borrow (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT ,
     book_returned,
     borrow_date,
     extended_duration,

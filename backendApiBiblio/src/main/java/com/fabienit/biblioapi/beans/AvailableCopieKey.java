@@ -27,8 +27,6 @@ public class AvailableCopieKey implements Serializable {
     public AvailableCopieKey() {
     }
 
-    
-
     public int getBookId() {
         return bookId;
     }

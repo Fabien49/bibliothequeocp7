@@ -16,10 +16,8 @@ CREATE TABLE IF NOT EXISTS `available_copie` (
   `book_id` int(11) NOT NULL,
   `library_id` int(11) NOT NULL,
   `available_quantity` int(11) NOT NULL,
-  `book_can_be_reserved` bit(1) NOT NULL,
-  `nearest_return_date` date DEFAULT NULL,
   `owned_quantity` int(11) NOT NULL,
-  `reservation_count` int(11) NOT NULL
+  PRIMARY KEY (book_id, library_id)
 );
 
 
@@ -36,7 +34,8 @@ CREATE TABLE IF NOT EXISTS `book` (
   `pictureurl` varchar(255) DEFAULT NULL,
   `publication_date` date NOT NULL,
   `synopsis` varchar(1000) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL
+  `title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id)
 );
 
 
@@ -55,7 +54,8 @@ CREATE TABLE IF NOT EXISTS `borrow` (
   `return_date` date NOT NULL,
   `book_id` int(11) NOT NULL,
   `library_id` int(11) NOT NULL,
-  `registered_user_id` int(11) NOT NULL
+  `registered_user_id` int(11) NOT NULL,
+  PRIMARY KEY (id)
 );
 
 
@@ -68,7 +68,9 @@ CREATE TABLE IF NOT EXISTS `borrow` (
 
 CREATE TABLE IF NOT EXISTS `library` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) DEFAULT NULL
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE (name)
 );
 
 
@@ -85,26 +87,14 @@ CREATE TABLE IF NOT EXISTS `registered_user` (
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `roles` varchar(255) DEFAULT NULL
+  `roles` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE (email)
 );
 
 
 -- --------------------------------------------------------
 
---
--- Structure de la table `reservation`
---
-
-
-CREATE TABLE IF NOT EXISTS `reservation` (
-  `id` int(11) NOT NULL,
-  `avalaibility_date` date DEFAULT NULL,
-  `notification_is_sent` bit(1) NOT NULL,
-  `position` int(11) NOT NULL,
-  `book_id` int(11) DEFAULT NULL,
-  `library_id` int(11) DEFAULT NULL,
-  `registered_user_id` int(11) DEFAULT NULL
-);
 
 
 --
