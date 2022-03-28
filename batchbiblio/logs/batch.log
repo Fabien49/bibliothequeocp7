@@ -13,3 +13,19 @@
 2022-03-24 09:55:00,844 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:2
 2022-03-24 09:55:01,032 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:3
 2022-03-24 09:55:01,065 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:6
+2022-03-28 10:19:31,104 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] No active profile set, falling back to default profiles: default
+2022-03-28 10:19:35,351 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] Started BibliobatchApplication in 6.246 seconds (JVM running for 9.327)
+2022-03-28 10:20:00,014 INFO com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Sending emails for late borrows
+2022-03-28 10:20:01,194 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:2
+2022-03-28 10:20:01,493 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:3
+2022-03-28 10:20:01,575 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:6
+2022-03-28 10:35:59,201 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] No active profile set, falling back to default profiles: default
+2022-03-28 10:36:04,849 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] Started BibliobatchApplication in 8.417 seconds (JVM running for 9.49)
+2022-03-28 10:37:05,051 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] No active profile set, falling back to default profiles: default
+2022-03-28 10:37:10,823 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] Started BibliobatchApplication in 8.062 seconds (JVM running for 9.161)
+2022-03-28 10:37:36,616 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] No active profile set, falling back to default profiles: default
+2022-03-28 10:37:42,152 INFO com.fabienit.bibliobatch.BibliobatchApplication [main] Started BibliobatchApplication in 8.292 seconds (JVM running for 9.804)
+2022-03-28 10:38:00,013 INFO com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Sending emails for late borrows
+2022-03-28 10:38:02,132 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:2
+2022-03-28 10:38:02,459 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:3
+2022-03-28 10:38:02,540 DEBUG com.fabienit.bibliobatch.service.impl.EmailServiceImpl [scheduling-1] Generating mail data for late borrow, id:6
