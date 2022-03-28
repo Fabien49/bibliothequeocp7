@@ -12,3 +12,5 @@
 2022-03-22 14:42:47,084 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Providing book resource from database: all book list
 2022-03-22 14:42:47,086 DEBUG com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-1] Splitting query, query: 
 2022-03-22 14:42:47,174 INFO com.fabienit.biblioapi.web.controllers.AvailableCopieController [http-nio-8001-exec-3] Providing availablecopie resource from database: all availablecopie list
+2022-03-22 14:46:43,539 INFO com.fabienit.biblioapi.web.controllers.BookController [http-nio-8001-exec-4] Providing book resource from database: all book list
+2022-03-22 20:55:33,552 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table book if exists
