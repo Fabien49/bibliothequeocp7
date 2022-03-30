@@ -1,7 +1,8 @@
 -- Create user
-insert into registered_user (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, email, first_name, last_name, password,roles)
+insert into registered_user (id, email, first_name, last_name, password,roles)
 VALUES
   (
+  1,
   	'fabien@gmail.com',
     'Fabien',
     'Chapeau',
@@ -9,6 +10,7 @@ VALUES
     'USER'
   ),
   (
+  2,
   	'test1@gmail.com',
     'userName',
     'userLastName',
@@ -16,6 +18,7 @@ VALUES
     'USER'
   ),
   (
+  3,
   	'test2@gmail.com',
     'userName',
     'userLastName',
@@ -23,6 +26,7 @@ VALUES
     'USER'
   ),
   (
+  4,
   	'test3@gmail.com',
     'userName',
     'userLastName',
@@ -32,7 +36,7 @@ VALUES
 
 -- Create book
 insert into book (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id,
     author_first_name,
     author_last_name,
     pictureurl,
@@ -42,6 +46,7 @@ insert into book (
   )
 VALUES
   (
+  1,
       'George',
       'Orwell',
       '/covers/1984.jpg',
@@ -50,6 +55,7 @@ VALUES
       '1984'
     ),
     (
+    2,
     'Philip K.',
     'Dick',
     '/covers/minority_report.jpg',
@@ -58,6 +64,7 @@ VALUES
     'Minority Report'
   ),
   (
+  3,
     'J.R.R.',
     'Tolkien',
     '/covers/lsda_tome1.jpg',
@@ -66,6 +73,7 @@ VALUES
     'Le Seigneur des Anneaux - La communauté de l''anneau'
   ),
   (
+  4,
     'Bernard',
     'Werber',
     '/covers/les_fourmis.jpeg',
@@ -74,6 +82,7 @@ VALUES
     'Les fourmis'
   ),
     (
+    5,
       'Bernard',
       'Werber',
       '/covers/la_prophetie_des_abeilles.jpg',
@@ -84,11 +93,11 @@ VALUES
 
 
 -- Create Library
-insert into library (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name)
+insert into library (id, name)
 VALUES
-  ('Toussaint'),
-  ('Justice'),
-  ('Annie-Fratellini');
+  (1, 'Toussaint'),
+  (2, 'Justice'),
+  (3, 'Annie-Fratellini');
 
 -- Create Available copie
 
@@ -113,7 +122,7 @@ VALUES
 
 -- Create Borrow
 insert into borrow (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT ,
+    id,
     book_returned,
     borrow_date,
     extended_duration,
@@ -124,6 +133,7 @@ insert into borrow (
   )
 VALUES
   (
+  1,
     false,
     '2022-03-01',
     false,
@@ -133,6 +143,7 @@ VALUES
     1
   ),
   (
+  2,
     false,
     '2022-01-01',
     false,
@@ -142,6 +153,7 @@ VALUES
     2
   ),
   (
+  3,
     false,
     '2022-01-12',
     false,
@@ -151,6 +163,7 @@ VALUES
     1
   ),
   (
+  4,
     false,
     '2022-03-17',
     false,
@@ -160,6 +173,7 @@ VALUES
     1
   ),
   (
+  5,
     false,
     '2022-03-17',
     false,
@@ -169,6 +183,7 @@ VALUES
     3
   ),
     (
+    6,
       false,
       '2022-06-17',
       false,
